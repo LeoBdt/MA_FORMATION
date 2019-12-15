@@ -8,7 +8,7 @@ $notes = [10, 20, 15, 9, 14];
 
 echo $notes[1]; # J'affiche la valeur qui correspond à 20, donc la deuxieme "case".
 
-# Ceci est un tableu avec plusieurs listes.
+# Ceci est un tableau avec plusieurs listes.
 
 $eleves = [
     'nom' => 'Bidot',
@@ -24,7 +24,7 @@ $eleves['prenom'] = 'Albert'; # Je viens de remplacer "Léo" par "Albert".
 
 # Si je veux rajouter une note, alors je fais :
 
-$eleves['notes'][3] = 16; # J'ai rajouté 16 à l'index 3.
+$eleves['notes'][3] = 16; # J'ai rajouté la note de 16 à l'index 3.
 
 # Si je veux afficher la liste des notes, je ne peux pas passer par echo.
 
