@@ -48,15 +48,16 @@ $action = (int)readline('Entrez votre action : (1: attaquer, 2 défendre, 3: pas
 switch ($action) {
     case 1: 
         echo 'J\'attaque !';
-    break;
+        break;
     case 2:
         echo 'Ok, je vais défendre.';
-    break;
+        break;
     case 3:
         echo 'Flemme, je passe mon tour.';
-    break;
+        break;
     default:
         echo 'Je crois que... tu t\'es trompé Garry.';
+        break; 
 }   
 
 
