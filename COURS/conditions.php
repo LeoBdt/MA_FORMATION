@@ -1,6 +1,5 @@
 <?php
 
-
 # Les conditions permettent de vérifier si une variable $ possède une valeur X.
 
 # Ici, je vais vérifier si l'élève a au dessous ou en dessous de la moyenne.
