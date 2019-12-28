@@ -60,7 +60,6 @@ switch ($action) {
         break; 
 }   
 
-
 # Voyons les opérateurs logiques.
 
 # Nous utilisons le cas des horaires d'ouvertures.

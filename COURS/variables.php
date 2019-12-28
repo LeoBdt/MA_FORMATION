@@ -4,7 +4,6 @@
 
 # J'enregistre la variable de mon nom et de mon age, j'utilise ensuite echo pour l'afficher.
 
-
 $nom = 'Léo';
 $age = 17;
 
@@ -16,7 +15,6 @@ $note1 = 10;
 $note2 = 18;
 
 echo ($note1 + $note2) / 2;
-
 
 # Les bouleins permettent de faire de sauvegarder des variables vraies ou fausses.
 
