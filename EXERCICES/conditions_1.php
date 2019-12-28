@@ -27,7 +27,15 @@ $profils = [
     ],
 ];
 
-$demande = (int)readline('Veuillez entrer votre id de connexion:');
+echo "Bienvenue dans votre espace, merci d'attendre...\n";
+
+sleep(1.5);
+
+$demande = (int)readline("Veuillez entrer votre id de connexion: ");
+
+echo "Chargement en cours... \n";
+
+sleep(1.5);
 
 switch ($demande) {
     case 19763:
@@ -40,7 +48,7 @@ switch ($demande) {
         print_r ($profils[2]);
     break;
     default:
-        echo 'ERREUR : ID INVALIDE !';
+        echo "\e[31mERREUR : ID INVALIDE ! \e[39m";
     break;
 }
 
