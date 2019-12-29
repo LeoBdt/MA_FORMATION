@@ -12,7 +12,6 @@ while ($chiffre !== 10) {
 
 echo "Bravo, vous avez gagné.";
 
-
 # Ok, maintenant passons au for.
 
 for ($i = 0; $i <= 10; $i++) {
