@@ -26,4 +26,16 @@ foreach ($notes as $note) {
     echo "- $note \n";
 }
 
-# STOP A 6:52
+#  Un autre exemple :
+
+$notes = [10, 14, 17];
+$eleves = [
+    'cm2' => 'Jean',
+    'cm1' => 'Albert'
+];
+
+foreach ($eleves as $classe => $eleve) {
+    echo "$eleve est dans la classe $classe \n";
+}
+
+# STOP A 8
