@@ -71,3 +71,5 @@ if ((9 <= $heure and $heure <= 12) or (14 <= $heure and $heure <= 17)) {
 } else {
     echo "Le magasin sera fermé.";
 }
+
+?>

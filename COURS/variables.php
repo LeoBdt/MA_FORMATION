@@ -21,3 +21,5 @@ echo ($note1 + $note2) / 2;
 $prenom = true;
 $prenom2 = false;
 $prenom3 = null; # Cette variable est nulle.
+
+?>

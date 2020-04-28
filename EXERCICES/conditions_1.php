@@ -53,3 +53,5 @@ switch ($demande) {
 }
 
 # Bon ok, je compte améliorer cet exercice, mais pour l'instant je ne sais faire que ça lol. 
+
+?>

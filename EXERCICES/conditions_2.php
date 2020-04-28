@@ -8,3 +8,5 @@ if ($temp > 38) {
 } else {
     echo "Tu n'as pas de fièvre.";
 }
+
+?>

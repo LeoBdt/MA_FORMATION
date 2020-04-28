@@ -30,3 +30,5 @@ $profils = [
 print_r($profils);
 
 # Voilà, c'était mon deuxième exercice, il me servira surement plus tard, mais pour l'instant, j'en suis rendu à là.
+
+?>

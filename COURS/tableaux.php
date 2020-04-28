@@ -48,3 +48,5 @@ $classe = [
 # Si je veux la deuxieme note du deuxieme élève alors : 
 
 echo $classe[1]['notes'][1];
+
+?>
