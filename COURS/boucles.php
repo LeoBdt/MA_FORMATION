@@ -67,4 +67,57 @@ foreach ($notes1 as $note2); {
     echo "- $note2 \n";
 }
 
-# STOP A 17
+# On veut demander à l'utilisateur de rentrer les horaires d'ouverture d'un magasin, on lui demande ensuite de rentrer une heure et on lui dit si le magasin sera ouvert.
+
+$creneaux = [];
+
+while (true) {
+    $debut = (int)readline("Heure d'ouverture : ");
+    $fin = (int)readline("Heure de fermeture : ");
+    if ($debut >= $fin) { // Supérieur ou égal // 
+        echo "Le créneaux ne peut pas être enregistré car l'heure d'ouverture ($debut) est supérieur à l'heure de fermeture ($fin) \n";  
+    } else {
+        $creneaux[] = [$debut, $fin];
+        $action = readline("Entrer un nouveau créneau ? (non = n) ");    
+        if ($action === 'n') {
+        break;
+        }
+    }
+}
+
+$choix = (int)readline("Que voulez-vous faire ? \n\n - Savoir si le magasin sera ouvert selon une heure donnée : tapez \"1\" \n - Avoir la liste des horaires d'ouverture du magasin : tapez \"2\" ");
+
+
+switch ($choix) {
+    case '1': # MODULE 1 : "Vérification ouverture du magasin"
+        $heure = (int)readline("A quelle heure voulez vous venir au magasin ? ");
+        $creneauTrouve = false;
+        
+        foreach ($creneaux as $creneau) {
+            if ($heure >= $creneau[0] && $heure <= $creneau[1]) {
+                $creneauTrouve = true;
+            break;
+            }
+        }
+        
+        if ($creneauTrouve) {
+            echo "\e[92mLe magasin sera ouvert.\e[39m";
+        } else {
+            echo "\e[31mDésolé, le magasin sera fermé.\e[39m";
+        }
+    break;
+    case '2':
+        echo "Le magasin est ouvert de";
+        foreach ($creneaux as $k => $creneau) {
+            if ($k > 0) {
+                echo " et de";
+    }
+    echo " $creneau[0]h à $creneau[1]h";
+}
+    break;
+    default:
+        echo "\e[31mMerci de faire un choix !\e[39m";
+    break; 
+}
+
+?>
