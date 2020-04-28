@@ -92,7 +92,7 @@ switch ($choix) {
     case '1': # MODULE 1 : "Vérification ouverture du magasin"
         $heure = (int)readline("A quelle heure voulez vous venir au magasin ? ");
         $creneauTrouve = false;
-        
+                
         foreach ($creneaux as $creneau) {
             if ($heure >= $creneau[0] && $heure <= $creneau[1]) {
                 $creneauTrouve = true;
@@ -106,7 +106,7 @@ switch ($choix) {
             echo "\e[31mDésolé, le magasin sera fermé.\e[39m";
         }
     break;
-    case '2':
+    case '2': # MODULE 2 : "Donner la liste des horaires du magasin"
         echo "Le magasin est ouvert de";
         foreach ($creneaux as $k => $creneau) {
             if ($k > 0) {
