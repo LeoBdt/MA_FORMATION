@@ -98,8 +98,7 @@ switch ($choix) {
                 $creneauTrouve = true;
             break;
             }
-        }
-        
+        }        
         if ($creneauTrouve) {
             echo "\e[92mLe magasin sera ouvert.\e[39m";
         } else {
