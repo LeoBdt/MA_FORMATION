@@ -34,8 +34,8 @@ print_r($eleves['notes']);
 
 $classe = [
     [
-        'nom' => 'Wheatley',
-        'prenom' => 'Ella',
+        'nom' => 'used_to_be_my_love',
+        'prenom' => 'used_to_be_my_love',
         'notes' => [19, 15, 16, 18, 12]
     ],
     [

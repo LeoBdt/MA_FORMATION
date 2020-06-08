@@ -1,8 +1,8 @@
 <?php 
 
 # INFORMATIONS PERSO : 
-$prenom = 'Ella';
-$nom = 'Wheatley';
+$prenom = 'used_to_be_my_love';
+$nom = 'used_to_be_my_love';
 
 # NOTES :
 
