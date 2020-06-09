@@ -7,4 +7,4 @@ Alors toi, qui passes par là, si tu as des conseils, ouvre une issue et je t'é
 
 Si tu veux me contacter, regarde juste en dessous !
 
-Discord : Léo#1234
+Twitter : @LeooBtdd
