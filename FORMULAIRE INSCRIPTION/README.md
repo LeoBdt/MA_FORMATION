@@ -6,7 +6,7 @@ TO-DO :
 
 - Ajouter la possibilité de soit créer un utilisateur soit ouvrir un fichier utilisateur via un id.
 
-- Mieux organiser le fichier json en donnant des précisions sur ce qui est écrit.
+- Mieux organiser le fichier json en donnant des précisions sur ce qui est écrit (quel est le nom, prenom) et ajouter la date de création du fichier.
 
 - Faire en sorte qu'un fichier ne peut pas avoir le même nom qu'un autre.
 
