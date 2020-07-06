@@ -7,3 +7,7 @@ TO-DO :
 - Ajouter la possibilité de soit créer un utilisateur soit ouvrir un fichier utilisateur via un id.
 
 - Mieux organiser le fichier json en donnant des précisions sur ce qui est écrit.
+
+- Faire en sorte qu'un fichier ne peut pas avoir le même nom qu'un autre.
+
+- Convertir les caractères spéciaux comme "é"
