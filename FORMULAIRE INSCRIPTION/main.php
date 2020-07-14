@@ -18,22 +18,23 @@ sleep(1);
 
 $nom = readline("Merci de renseigner votre nom : ");
 $prenom = readline("Merci de renseigner votre prénom : ");
-$age = readline("Merci de renseigner votre âge : ");
-$commune_de_naissance = readline("Merci de renseigner votre commune de naissance : ");
+$age = (int)readline("Merci de renseigner votre âge : ");
+$lieu_de_naissance = readline("Merci de renseigner votre lieu de naissance : ");
 $lieu_de_residence = readline("Merci de renseigner votre lieu de residence : ");
 
 # Partie de création du tableau qui rassemble les données utilisateur.
 
-$renseignements = json_encode([$nom, $prenom, $age, $commune_de_naissance, $lieu_de_residence]);
+$renseignements = json_encode([ "date de création "=> date("j-n-y"), "nom" => $nom, "prenom" => $prenom, "age" => $age, "lieu de naissance" => $lieu_de_naissance, "lieu de residence" => $lieu_de_residence], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
 # Partie creation du fichier de l'utilisateur.
 
-$id = rand(0, 10000);
-$nom_fichier = './utilisateurs/'.$id.".json";
-$contenu_fichier = "$renseignements";
+$dossier = "./utilisateurs/";
+$nb_utilisateurs = 0;
+$fichier = glob($dossier . "*");
+$nb_utilisateurs = count($fichier) + 1;
 
-file_put_contents($nom_fichier, $contenu_fichier);
+file_put_contents("./utilisateurs/".$nb_utilisateurs.".json", $renseignements);
 
 # J'informe l'utilisateur de la création de son fichier.
 
-echo "Utilisateur enregistré sous l'ID : ($id)";
+echo "Utilisateur enregistré sous l'ID : ($nb_utilisateurs)";

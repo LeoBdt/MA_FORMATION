@@ -2,12 +2,16 @@
 
 Ce dossier va contenir ce qui est pour moi mon premier gros projet, je vais faire un formulaire d'inscription là où l'utilisateur pourra rentrer plusieurs informations personnelles, bien évidemment tout cela sera stocké sur un fichier .json individualisé.
 
-TO-DO : 
+TO-DO V2 : 
 
 - Ajouter la possibilité de soit créer un utilisateur soit ouvrir un fichier utilisateur via un id.
 
-- Mieux organiser le fichier json en donnant des précisions sur ce qui est écrit (quel est le nom, prenom) et ajouter la date de création du fichier.
+CHANGELOG V1.5 : 
 
-- Faire en sorte qu'un fichier ne peut pas avoir le même nom qu'un autre.
+- Un fichier utilisateur ne peut désormais plus avoir le même nom qu'un autre.
 
-- Convertir les caractères spéciaux comme "é"
+- Les caractères spéciaux comme "é" sont affichés correctement.
+
+- Le fichier utilisateur est mieux organisé, c'est plus agréable de le lire.
+
+- La date de création du fichier est désormais affichée.
