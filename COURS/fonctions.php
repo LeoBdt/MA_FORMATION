@@ -27,3 +27,19 @@ $res_addition = array_sum($notes); # Je fais la somme de mes valeurs dans le tab
 $nb_notes = count($notes); # Je regarde mon nombre de notes présentes dans le tableau.
 
 echo "Votre moyenne est de " . round($res_addition / $nb_notes, 2) . " !"; # J'utilise la fonction round pour arrondir ma moyenne et je paramètre 2 pour préciser combien de chiffres après la virgule.
+
+# Hop, maintenant je fais un filtre anti gros-mots ! 
+
+$insultes = ["merde", "con", "fdp"];
+
+$phrase_test = readline("Merci d'entrer une phrase contenant un gros mot : \n");
+
+foreach($insultes as $insulte) {
+    $nb_etoile = str_repeat("*", strlen($insulte));
+    $phrase_test = str_replace($insulte, $nb_etoile, $phrase_test);
+}
+
+echo $phrase_test;
+
+
+# Ce cours est terminé, le filtre est pas parfait mais il suffit.
