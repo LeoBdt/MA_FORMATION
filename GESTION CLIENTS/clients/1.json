@@ -1,0 +1,11 @@
+{
+    "nom": "Bidot",
+    "prenom": "Léo",
+    "age": 18,
+    "mail": "unmail@gmail.com",
+    "telephone": "00.00.00.00.00",
+    "adresse": "8 rue des claviers",
+    "ville": "Cryzu",
+    "code_postal": "31341",
+    "transactions": [245, 289, 35]
+}

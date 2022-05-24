@@ -1,0 +1,11 @@
+{
+    "nom": "Bony",
+    "prenom": "Pablo",
+    "age": 19,
+    "mail": "pablo@fiak.fr",
+    "telephone": "0626108739",
+    "adresse": "13 rue des fiaks",
+    "ville": "CRUFIAK",
+    "code_postal": "34310",
+    "transactions": []
+}
